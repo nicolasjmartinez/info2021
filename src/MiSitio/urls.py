@@ -24,6 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('inicio/', inicio),  # tmb views.inicio así no hay que importar
     path('login/', login),
-    path('', views.ini),
+    path('', views.ini, name='principal'),
     path('amigos/', include('apps.amigos.urls'))
 ]

@@ -1,18 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de amigos</title>
-</head>
-<body>
-    <h1>Lista de amigos</h1>
-    <p>A continuación se muestra la lista de amigos disponibles</p>
-    <ul>
-        {% for a in amigos %}
-            <li>{{a.nombre}}</li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+{% extends 'base/base.html' %}
+{% block contenido %}
+  <div class='album py-5 bg-light'>
+    <div class='container'>
+      <div class='col'>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Dirección</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for a in amigos %}
+              <tr>
+                <td>{{a.nombre}}</td>
+                <td>{{a.apellido}}</td>
+                <td>{{a.domicilio}}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class='row'>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+{% endblock contenido %}

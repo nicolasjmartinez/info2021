@@ -1,6 +1,7 @@
 # Mi primer sitio desarrollado en el Informatorio
 
 _Este es mi primer proyecto del módulo de desarrollo web_
+_Usando template base: https://getbootstrap.com/docs/4.0/examples/album/
 
 ## Comenzando 🚀
 
