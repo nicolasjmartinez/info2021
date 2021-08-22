@@ -14,3 +14,21 @@ def inicio(request):
 
     }
     return render(request, template_name, ctx)  # render tiene 3 parámetros
+
+
+def login(request):
+    template_name = 'login.html'  # template html a renderizar
+
+    ctx = {
+
+    }
+    return render(request, template_name, ctx)  # render tiene 3 parámetros
+
+
+def ini(request):
+    template_name = 'ini.html'  # template html a renderizar
+
+    ctx = {
+
+    }
+    return render(request, template_name, ctx)  # render tiene 3 parámetros

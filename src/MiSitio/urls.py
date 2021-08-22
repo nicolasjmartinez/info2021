@@ -17,9 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 from .views import inicio
+from .views import login
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inicio/', inicio),
+    path('inicio/', inicio),  # tmb views.inicio así no hay que importar
+    path('login/', login),
+    path('', views.ini),
     path('amigos/', include('apps.amigos.urls'))
 ]
