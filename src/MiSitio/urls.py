@@ -22,8 +22,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inicio/', inicio),  # tmb views.inicio así no hay que importar
+    # tmb views.inicio así no hay que importar
+    path('inicio/', inicio, name='principal'),
     path('login/', login),
-    path('', views.ini, name='principal'),
     path('amigos/', include('apps.amigos.urls'))
 ]
