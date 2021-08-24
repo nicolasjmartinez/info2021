@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'usuarios.Usuario'
 
 # Application definition
 
@@ -42,7 +43,8 @@ DJANGO_APPS = [
 
 # Aplicaciones propias
 LOCAL_APPS = [
-    'apps.amigos'
+    'apps.amigos',
+    'apps.usuarios'
 ]
 
 # Aplicaciones de terceros

@@ -23,7 +23,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # tmb views.inicio así no hay que importar
-    path('inicio/', inicio, name='principal'),
+    path('', inicio, name='principal'),
     path('login/', login),
     path('amigos/', include('apps.amigos.urls'))
 ]
